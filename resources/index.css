@@ -1,4 +1,10 @@
 /* general style*/
+:root{
+    --green: #63ab61;
+    --white: #fffffe;
+    --black: #0b100f;
+}
+
 html{
     font-family: Roboto,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
@@ -6,8 +12,8 @@ html{
 
 /* body style*/
 body{
-    background-color: #0b100f;
-    color: #fffffe;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 header{
@@ -35,17 +41,17 @@ nav ul{
 
 
 nav a{
-    color: #fffffe;
+    color: var(--white);
     text-decoration: none;
     font-weight: 600;
 }
 
 nav a:hover{
-    color:#63ab61;
+    color:var(--green);
 }
 
 #header-split{
-    border: 1px solid #fffffe;
+    border: 1px solid var(--white);
     height: 2em;
 }
 
@@ -56,7 +62,7 @@ nav a:hover{
 }
 
 .lightmode{
-    background-color: #fffffe;
+    background-color: var(--white);
     border-radius: 3px;
 }
 
@@ -68,5 +74,36 @@ nav a:hover{
     max-width: 100%;
 }
 .darkmode:hover,.lightmode.lightmode:hover{
-    background-color:#63ab61;
+    background-color: var(--green);
+}
+
+/* main style*/
+b{
+    color:var(--green);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.banner h2{
+    font-size: 2rem;
+}
+
+.banner p{
+    font-size: 1.25rem;
+}
+
+.page-title{
+    font-size: 2.75rem;
+}
+
+#profile-pic{
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
 }
