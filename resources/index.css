@@ -79,7 +79,7 @@ nav a:hover{
 
 /* main style*/
 main, footer{
-    margin: 4rem 15%;
+    margin: 2.5rem 15%;
 }
 
 b{
@@ -134,6 +134,7 @@ hr{
 }
 
 .about,.projects,.contact{
+    margin-top: 2rem;
     display: flex;
     align-content: space-between;
 }
