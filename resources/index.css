@@ -21,13 +21,13 @@ header{
     padding-bottom: 1rem;
     display: flex;
     justify-content: flex-end;
-    margin: 0 1.5rem;
+    margin: 0 10%;
 }
 
 /* navbar style*/
 nav{
     display: block;
-    
+
 }
 
 nav ul{
@@ -78,6 +78,10 @@ nav a:hover{
 }
 
 /* main style*/
+main, footer{
+    margin: 4rem 15%;
+}
+
 b{
     color:var(--green);
 }
@@ -90,7 +94,18 @@ b{
 }
 
 h2{
+    font-size: 4rem;
+    margin-top: 1rem;
+
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+#welcome{
     font-size: 2rem;
+    margin-top: 0;
 }
 
 .banner p{
@@ -98,7 +113,8 @@ h2{
 }
 
 .page-title{
-    font-size: 2.75rem;
+    font-size: 6rem;
+    margin: 2rem 0;
 }
 
 #profile-pic{
@@ -117,7 +133,7 @@ hr{
     width: 100%;
 }
 
-.about{
+.about,.projects,.contact{
     display: flex;
     align-content: space-between;
 }
@@ -157,4 +173,25 @@ hr{
 .language-logo{
     width: 60px;
     height: 60px;
+}
+
+/*Footer styles*/
+.contact{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-container{
+    display: flex;
+    align-content: space-between;
+    margin: 0 auto;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.contact-form img{
+    width: 4rem;
+    height: 4rem;
 }
